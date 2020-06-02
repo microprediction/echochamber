@@ -30,8 +30,8 @@ jobs:
         pip install --upgrade microprediction
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Install package
-        run: |
-          pip install -e .[test]
+      run: |
+        pip install -e .[test]
     - name: Lint with flake8
       run: |
         # stop the build if there are Python syntax errors or undefined names
