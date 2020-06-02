@@ -6,8 +6,8 @@ HERE = pathlib.Path(__file__).parent
 README = (HERE / "README.md").read_text()
 
 setup(
-    name="muid",
-    version="0.0.1",
+    name="echochamber",
+    version="0.0.2",
     description="Using an Echo State Network to crawl Microprediction.Org",
     long_description=README,
     long_description_content_type="text/markdown",

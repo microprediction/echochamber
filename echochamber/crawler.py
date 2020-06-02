@@ -47,7 +47,7 @@ class EchoCrawler(MicroCrawler):
         outputs = np.array(list(reversed(lagged_values)))
         esn = ESN(n_inputs=1,n_outputs=1,**self.ecn_params)
         esn.fit(inputs=inputs, outputs=outputs)
-        future = esn.predict(np.ones(k))
+        future = [ v[0] for v in esn.predict(np.ones(k)) ]
         center = future[-1]
         offset = center-lagged_values[0]
         scenarios = differenced_bootstrap(lagged=lagged_values,  decay=0.01, num=self.num_predictions)
