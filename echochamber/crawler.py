@@ -34,6 +34,7 @@ class EchoCrawler(MicroCrawler):
         """
         super().__init__(write_key=write_key)
         self.ecn_params = esn_params or dict()
+        print("Let's do this ...",flush=True )
 
     def candidate_streams(self):
         return ['three_body_x.json','three_body_y.json','three_body_z.json']

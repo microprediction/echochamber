@@ -7,7 +7,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
     name="echochamber",
-    version="0.0.4",
+    version="0.0.5",
     description="Using an Echo State Network to crawl Microprediction.Org",
     long_description=README,
     long_description_content_type="text/markdown",
