@@ -1,4 +1,4 @@
-# To make testing easier
+# Example of raw call
 import requests
 
 def example_lagged_values():
