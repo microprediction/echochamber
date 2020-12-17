@@ -42,7 +42,10 @@ class EchoCrawler(MicroCrawler):
     def sample(self, lagged_values, lagged_times=None, name=None, delay=None):
         """ Fit an echo-state machine to predict the mean, then use standard scattering for sampling """
         dt = approx_mode(np.diff(lagged_times))
-        k  = max(1,int( delay/dt ))
+        try:
+            k  = max(1,int( delay/(0.01+dt) ))
+        except:
+            k = 1
         num_lagged = len(lagged_values)
         inputs = np.ones(num_lagged)          # Exogenous inputs
         outputs = np.array(list(reversed(lagged_values)))
