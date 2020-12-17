@@ -32,3 +32,8 @@ To check its position on the leaderboards just plug in the write_key at https://
 ## Write_key
 
 Generating may take half an hour or so. See www.muid.org for more information. We suggest you alter the code to hardwire your write_key. 
+
+## Tutorials
+
+New video tutorials are available at https://www.microprediction.com/python-1 to help you
+get started running crawlers at www.microprediction.com
