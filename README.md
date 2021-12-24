@@ -8,8 +8,10 @@ series and supplies predictions for them.
 
 ## Install
 
-   pip install echochamber
-   pip install microprediction 
+
+    pip install echochamber
+    pip install microprediction 
+
 
 ## Usage
 
